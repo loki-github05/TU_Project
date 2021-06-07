@@ -1,0 +1,280 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomPage</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+</head>
+<body onload="function1()">
+    <div class="header" id="header">
+        <a href="#" class="logo"><i class="fas fa-user"></i></a>
+        <ul class="menu">
+            <li class="menu-item dropdown">
+                <a href="#"class="dropbtn option">Events<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#row2" class="item">Events</a>
+                    <a href="#row2" class="item">Live Events</a>
+                    <a href="#row2" class="item">Workshops</a>
+                </div>
+            </li>
+            <li class="menu-item"><a href="#row1">About Us</a></li>
+            <li class="menu-item"><a href="#footer">Join with us</a></li>
+            <li class="menu-item"><a href="#">Login</a></li>
+        </ul>
+        <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="row1" id="row1">
+        <div class="content">
+            <h1 class="name" id="name">Trending Updates</h1>
+            <blockquote id="tagline">Company Tagline is placed here</blockquote>
+            <p id="inner">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="image">
+            <img src="{% static 'images/image.jpg' %}" class="company-image">
+        </div>
+    </div>
+    <div class="row2" id="row2">
+        <div class="title">
+            <div class="caption">Events & Workshops</div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="border"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>BootStrap</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="row3">
+        <div class="title">
+            <div class="caption">Our Journey</div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="border"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="count">
+            <div class="menu">
+                <i class="fas fa-users"></i>
+                <div class="content">Students Impacted</div>
+                <div class="num">5000</div>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-user-graduate"></i>
+                <div class="content">Mentors</div>
+                <div class="num">75</div>
+            </div>
+
+            <div class="menu">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div class="content">Courses</div>
+                <div class="num">10</div>
+            </div>
+        </div>
+    </div>
+    <div class="row2">
+        <div class="title">
+            <div class="caption">Courses</div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="border"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inner-card">
+                <div class="card">
+                    <div class="card-front">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>BootStrap</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                    <div class="card-back">
+                        <a href="#">Register to event</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="row5">
+        <div class="title">
+            <div class="caption">Testinomials</div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="border"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="pics">
+                <img src="{% static 'images/robert-downey.jpg' %}" class="active" alt="test-1">
+                <img src="{% static 'images/natasha.jpg' %}" alt="test-2">
+                <img src="{% static 'images/peter.jpg' %}" alt="test-3">
+            </div>
+            <div class="info">
+                <div class="person active" id="test-1">
+                    <span class="description">Robert Downey</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+                </div>
+                <div class="person" id="test-2">
+                    <span class="description">Scarlett Johnson</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+                </div>
+                <div class="person" id="test-3">
+                    <span class="description">Tom Holland</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequatur et adipisci ut, impedit cumque, similique, eum tenetur, numquam eligendi aliquid. Nulla sit, cupiditate corporis labore, modi natus officiis asperiores!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <p>Contact Us</p>
+        <div class="lower">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Events</a>
+                <a href="#">Workshops</a>
+                <a href="#">Courses</a>
+                <a href="#">Join with us</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="privacy">
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="container">
+                <form action="#" method="POST">
+                    <h1>Join Our Newsletter</h1>
+                    <div class="email-box">
+                        <i class="fas fa-envelope"></i>
+                        <input class="inp" type="email" name="email" placeholder="Enter your email">
+                        <button class="btn" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#header"><i class="fas fa-arrow-up"></i></a>
+    </div>
+</body>
+<script type="text/javascript">
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".menu");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+    }
+    function function1(){
+        document.getElementById("name").style.marginLeft = "10px";
+        document.getElementById("tagline").style.marginLeft = "20px";
+        document.getElementById("inner").style.marginLeft = "0";
+    }
+    $(".num").counterUp({delay:10,time:7000});
+
+    $('.pics img').click(function(){
+        $(".pics img").removeClass("active");
+        $(this).addClass("active");
+
+        $(".person").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+    });
+
+</script>
+</html>
